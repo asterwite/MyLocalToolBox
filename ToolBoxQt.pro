@@ -1,0 +1,13 @@
+QT += core gui widgets network
+greaterThan(QT_MAJOR_VERSION, 4): CONFIG += c++11
+CONFIG += c++17 release
+TARGET = ToolBoxQt
+TEMPLATE = app
+INCLUDEPATH += $$PWD/../tbproj/third_party
+SOURCES += src/main.cpp src/mainwindow.cpp
+SOURCES += src/tools_urlsafe.cpp src/tools_system.cpp src/tools_desktop.cpp src/tools_text.cpp src/tools_intel.cpp
+SOURCES += src/tools_files.cpp src/tools_network.cpp src/tools_life.cpp src/tools_vault.cpp
+HEADERS += src/mainwindow.h src/notewindow.h src/shotoverlay.h src/pickoverlay.h src/toast.h src/ruleroverlay.h
+RESOURCES += char.qrc
+RC_FILE = toolbox.rc
+LIBS += -lpsapi -lwinmm

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/res">
+        <file alias="char_full.png">res/char_full.png</file>
+        <file alias="char_badge256.png">res/char_badge256.png</file>
+        <file alias="arrow_up.png">res/arrow_up.png</file>
+        <file alias="arrow_down.png">res/arrow_down.png</file>
+    </qresource>
+</RCC>
